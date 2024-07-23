@@ -1,0 +1,188 @@
+body{
+    background-image: url(background.jpeg);
+    background-size: cover;
+}
+
+.navigation{
+    height:40px;
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo{
+    padding-bottom:6px;
+    font-size:20px;
+    left:20px;
+    color: black;  
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-content: center;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .logo img{
+    height: 25px;
+    width: 25px;
+  }
+
+  .navigation .nav ul{
+    display:flex;
+    flex-direction: row;  
+    justify-content: center;  
+}
+
+.navigation .nav li{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 50px;
+    align-content: center;
+}
+
+.navigation .login ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation .login button{
+    background-color: black;
+    display: flex;
+    margin-left: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content #para1{
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+.content #para2{
+    font-size: 22px;
+    margin-left: 100px;
+    margin-top:-40px;
+}
+
+.content img{
+    height: 50px;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+.content #para3{
+    font-size: 35px;
+    margin-left: 100px;
+    margin-top: -15px;
+}
+
+.review{
+    display: flex;
+    
+}
+.review #para3 span{
+    font-size: 25px;
+}
+
+.review img{
+    height: 65px;
+    width: 65px;
+    margin-top: -30px;
+}
+
+.review #para4{
+    font-size: 40px;
+    margin-top: -35px;
+    margin-bottom:0px;
+}
+
+.review #para5 {
+    font-size: 25px;
+    margin-top: -20px;
+    margin-left: -60px;
+}
+
+.outer{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.inner2{
+    display:flex;
+    margin-right: -10px;
+}
+
+.inner2 #label1{
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 600;   
+    margin-left: -500px;
+}
+
+.inner2 #name{
+    height: 35px;
+    width: 300px;
+    margin-top: 80px;
+    margin-left:-77px;
+    border:2px solid black;
+    border-radius: 5px;
+}
+
+.inner2 #label2{
+    margin-top: 155px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: -305px;
+}
+
+.inner2 #Email{
+    height: 35px;
+    width: 300px;
+    margin-top: 205px;
+    margin-left:-77px;
+    border:2px solid black;
+    border-radius: 5px;
+}
+
+.inner2 #label3{
+    margin-top: 280px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: -305px;
+}
+
+.inner2 #Password{
+    height: 35px;
+    width: 300px;
+    margin-top: 330px;
+    margin-left:-125px;
+    border:2px solid black;
+    border-radius: 5px;
+}
+
+.inner2 #logbut{
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 325px;
+    border-radius: 20px;
+    margin-top: 412px;
+    margin-left: -312px;
+}
+
