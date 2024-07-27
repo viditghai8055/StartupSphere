@@ -1,20 +1,20 @@
-body{
+body {
     background-image: url(assets/background.jpeg);
     background-size: contain;
 }
 
-.navigation{
-    height:40px;
-    width:100%;
+.navigation {
+    height: 40px;
+    width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.logo{
-    padding-bottom:6px;
-    font-size:20px;
-    left:20px;
-    color: black;  
+.logo {
+    padding-bottom: 6px;
+    font-size: 20px;
+    left: 20px;
+    color: black;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-wrap: wrap;
@@ -23,94 +23,104 @@ body{
     align-content: center;
     text-align: center;
     margin-top: 15px;
-  }
+}
 
-  .logo img{
+.logo img {
     height: 25px;
     width: 25px;
-  }
-
-  .navigation .nav ul{
-    display:flex;
-    flex-direction: row;  
-    justify-content: center;  
 }
 
-.navigation .nav li{
+.navigation .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigation .nav li {
     display: flex;
     flex-wrap: wrap;
-    margin-left:40px;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    cursor: pointer;
+    margin-left: 40px;
     margin-bottom: 50px;
     align-content: center;
+    transition-duration: 0.4s
 }
 
-.navigation .login ul{
+.navigation .nav li button {
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: A;
+    cursor: pointer;
+    transition-duration: 0.4s
+}
+
+.navigation .login ul {
     display: flex;
     justify-content: flex-end;
 }
 
-.navigation .login button{
+.navigation .login button {
     background-color: black;
     display: flex;
     margin-left: 10px;
     border-radius: 20px;
     color: white;
     font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.4s
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
 }
 
-.content #para1{
+.content #para1 {
     font-size: 50px;
     margin-left: 100px;
 }
 
-.content #para2{
+.content #para2 {
     font-size: 22px;
     margin-left: 100px;
-    margin-top:-40px;
+    margin-top: -40px;
 }
 
-.content img{
+.content img {
     height: 50px;
     width: 100px;
     margin-left: 100px;
     margin-top: -20px;
 }
 
-.content #para3{
+.content #para3 {
     font-size: 35px;
     margin-left: 100px;
     margin-top: -15px;
 }
 
-.review{
+.review {
     display: flex;
-    
+
 }
-.review #para3 span{
+
+.review #para3 span {
     font-size: 25px;
 }
 
-.review img{
-    height: 65px;
-    width: 65px;
+.review img {
+    height: 75px;
+    width: 80px;
     margin-top: -30px;
     border-radius: 50%;
-    border:solid rgb(197, 174, 174) 1px;
+    border: solid rgb(197, 174, 174) 1px;
 }
 
-.review #para4{
+.review #para4 {
     font-size: 40px;
     margin-top: -35px;
-    margin-bottom:0px;
+    margin-bottom: 0px;
 }
 
 .review #para5 {
@@ -119,66 +129,66 @@ body{
     margin-left: -60px;
 }
 
-.outer{
+.outer {
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
 }
 
-.inner2{
-    display:flex;
+.inner2 {
+    display: flex;
     margin-right: -10px;
 }
 
-.inner2 #label1{
+.inner2 #label1 {
     margin-top: 30px;
     font-size: 30px;
-    font-weight: 600;   
+    font-weight: 600;
     margin-left: -500px;
 }
 
-.inner2 #name{
+.inner2 #name {
     height: 35px;
     width: 300px;
     margin-top: 80px;
-    margin-left:-77px;
-    border:2px solid black;
+    margin-left: -77px;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
-.inner2 #label2{
+.inner2 #label2 {
     margin-top: 155px;
     font-size: 30px;
     font-weight: 600;
     margin-left: -305px;
 }
 
-.inner2 #Email{
+.inner2 #Email {
     height: 35px;
     width: 300px;
     margin-top: 205px;
-    margin-left:-77px;
-    border:2px solid black;
+    margin-left: -77px;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
-.inner2 #label3{
+.inner2 #label3 {
     margin-top: 280px;
     font-size: 30px;
     font-weight: 600;
     margin-left: -305px;
 }
 
-.inner2 #Password{
+.inner2 #Password {
     height: 35px;
     width: 300px;
     margin-top: 330px;
-    margin-left:-125px;
-    border:2px solid black;
+    margin-left: -125px;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
-.inner2 #logbut{
+.inner2 #logbut {
     color: white;
     background-color: black;
     height: 40px;
@@ -186,21 +196,23 @@ body{
     border-radius: 20px;
     margin-top: 412px;
     margin-left: -312px;
+    cursor: pointer;
+    transition-duration: 0.4s
 }
 
-.comp{
+.comp {
     display: flex;
-    margin-left:100px;
+    margin-left: 100px;
     margin-top: 50px;
 }
 
-.comp p{
+.comp p {
     font-size: 17px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.comp #Compnames1{
+.comp #Compnames1 {
     height: 70px;
     width: 150px;
     border: black 2px solid;
@@ -209,7 +221,7 @@ body{
     background-size: cover;
 }
 
-.comp #Compnames2{
+.comp #Compnames2 {
     height: 70px;
     width: 150px;
     border: black 2px solid;
@@ -218,7 +230,7 @@ body{
     background-size: cover;
 }
 
-.comp #Compnames3{
+.comp #Compnames3 {
     height: 70px;
     width: 150px;
     border: black 2px solid;
@@ -227,7 +239,7 @@ body{
     background-size: cover;
 }
 
-.comp #Compnames4{
+.comp #Compnames4 {
     height: 70px;
     width: 150px;
     border: black 2px solid;
@@ -236,7 +248,7 @@ body{
     background-size: cover;
 }
 
-.comp #Compnames5{
+.comp #Compnames5 {
     height: 70px;
     width: 150px;
     border: black 2px solid;
@@ -245,7 +257,7 @@ body{
     background-size: cover;
 }
 
-.comp #Compnames6{
+.comp #Compnames6 {
     height: 70px;
     width: 150px;
     border: black 2px solid;
@@ -254,141 +266,143 @@ body{
     background-size: cover;
 }
 
-.black1{
+.black1 {
     display: flex;
     background-image: url(assets/black-370118_1920.png);
     background-size: cover;
-    height:1000px;
-    width:100%;
-    margin-top:70px;
+    height: 950px;
+    width: 100%;
+    margin-top: 70px;
 }
 
-.black1 #image{
+.black1 #image {
     display: flex;
     background-image: url(assets/meeting.jpg);
     background-size: cover;
-    height:500px;
-    width:500px;
+    height: 500px;
+    width: 500px;
     margin-top: 100px;
-    margin-left:100px;
+    margin-left: 100px;
 }
 
-.cont{
-    display:flex;
-    margin-left:60px;
-    margin-top:80px;
+.cont {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 80px;
 }
 
-.black1 #para1{
+.black1 #para1 {
     color: white;
-    font-weight:600;
+    font-weight: 600;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
 }
 
-.black1 #para2{
-    color:white;
-    margin-left:-90px;
-    font-size:50px;
+.black1 #para2 {
+    color: white;
+    margin-left: -90px;
+    font-size: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.black1 ul{
-    color:white;
-    margin-top:270px;
-    margin-left:-560px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:20px;
-}
-
-.black1 li{
-    margin-top:25px;
-}
-
-.black1 #vision{
-    display: flex;
-    margin-top:700px;
-    margin-left:-870px;
-}
-
-.black1 #visionHead{
+.black1 ul {
     color: white;
-    font-size:30px;
+    margin-top: 270px;
+    margin-left: -560px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.black1 li {
+    margin-top: 25px;
+}
+
+.black1 #vision {
+    display: flex;
+    margin-top: 640px;
+    margin-left: -870px;
+}
+
+.black1 #visionHead {
+    color: white;
+    font-size: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
 }
 
-.black1 #visionCont{
+.black1 #visionCont {
     color: white;
-    margin-top:80px;
-    margin-left:-145px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size:20px;
+    margin-top: 80px;
+    margin-left: -145px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
 }
 
-.black1 button{
+.black1 button {
     background-color: #3A5BCC;
     color: white;
-    height:45px;
-    width:150px;
-    margin-top:210px;
-    margin-left:-430px;
+    height: 45px;
+    width: 150px;
+    margin-top: 210px;
+    margin-left: -430px;
     font-size: 20px;
     border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
+    transition-duration: 0.4s
 }
 
-.black1 #mission{
-    display:flex;
-    margin-top:695px;
-    margin-left:400px;
-}
-.black1 #missionHead{
-    color:white;
-    font-size:30px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
+.black1 #mission {
+    display: flex;
+    margin-top: 640px;
+    margin-left: 400px;
 }
 
-.black1 #missionCont{
+.black1 #missionHead {
     color: white;
-    margin-top:80px;
-    margin-left:-158px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size:20px;
-}
-
-.features{
-    display:flex;
-    margin-top:50px;
-    margin-left:50px;
-}
-
-.features #heading{
-    font-size:45px;
+    font-size: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
 }
 
-.features #img{
+.black1 #missionCont {
+    color: white;
+    margin-top: 80px;
+    margin-left: -158px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.features {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.features #heading {
+    font-size: 45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.features #img {
     background-image: url(assets/two-heads-are-better-than-one-shot-of-two-young-bu-PL9H55T_Evch04ZF.jpg);
     background-size: cover;
     height: 600px;
     width: 650px;
-    margin-top:190px;
-    margin-left:-495px;
+    margin-top: 190px;
+    margin-left: -495px;
 }
 
-.features #info{
+.features #info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 190px;
-    margin-left:70px;
+    margin-left: 70px;
 }
 
-.features #creation{
+.features #creation {
     display: flex;
     background-color: black;
     color: white;
@@ -400,12 +414,12 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.features #details{
+.features #details {
     font-size: 17px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.features #communication{
+.features #communication {
     display: flex;
     background-color: black;
     color: white;
@@ -417,7 +431,7 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.features #crowd{
+.features #crowd {
     display: flex;
     background-color: black;
     color: white;
@@ -429,7 +443,7 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.features #expert{
+.features #expert {
     display: flex;
     background-color: black;
     color: white;
@@ -441,277 +455,334 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.black2{
+.black2 {
     display: flex;
     width: 100%;
-    height:1150px;
+    height: 1150px;
     background-image: url(assets/black-370118_1920.png);
     background-size: cover;
-    margin-top:70px;
+    margin-top: 70px;
 }
 
-.black2 #testimonial{
+.black2 #testimonial {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
-    margin-left:100px;
-    margin-top:100px;
-    font-size:20px;
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 20px;
 }
 
-.black2 #content{
+.black2 #content {
     color: white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top:150px;
-    font-size:45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 150px;
+    font-size: 45px;
     margin-left: -120px;
     line-height: 53px;
 }
 
-.black2 #all{
+.black2 #all {
     color: white;
     background-color: #3A5BCC;
     height: 50px;
     width: 170px;
-    margin-top:280px;
-    margin-left:70px;
+    margin-top: 280px;
+    margin-left: 70px;
     font-size: 16px;
     border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
+    transition-duration: 0.4s
 }
 
-.black2 #testi1{
-    display:flex;
+.black2 #testi1 {
+    display: flex;
     flex-wrap: wrap;
-    color:white;
-    margin-top:600px;
-    height:250px;
+    color: white;
+    margin-top: 600px;
+    height: 250px;
     width: 350px;
-    margin-left:-1000px; 
+    margin-left: -1000px;
 }
 
-.black2 #photo1{
-    height:55px;
-    width:55px;
+.black2 #photo1 {
+    height: 55px;
+    width: 55px;
     background-image: url(assets/founder1.jpg);
     border-radius: 50%;
     background-size: cover;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
-#testi1 p{
+#testi1 p {
     font-size: 20px;
-    margin-left:15px;
-    margin-top:15px;
+    margin-left: 15px;
+    margin-top: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.black2 span{
+.black2 span {
     font-size: 15px;
 }
 
-.black2 #testi2{
-    display:flex;
+.black2 #testi2 {
+    display: flex;
     flex-wrap: wrap;
-    color:white;
+    color: white;
     height: 200px;
     width: 370px;
     margin-left: 600px;
-    margin-top:-180px
+    margin-top: -180px
 }
 
-.black2 #photo2{
-    height:55px;
-    width:55px;
+.black2 #photo2 {
+    height: 55px;
+    width: 55px;
     background-image: url(assets/portrait-of-young-handsome-man-33DQX63_JYLtCoRS.jpg);
     border-radius: 50%;
     background-size: cover;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-#testi2 p{
+#testi2 p {
     font-size: 20px;
-    margin-left:15px;
-    margin-top:20px
+    margin-left: 15px;
+    margin-top: 20px
 }
 
-.black2 #testi3{
-    display:flex;
+.black2 #testi3 {
+    display: flex;
     flex-wrap: wrap;
-    color:white;
+    color: white;
     height: 200px;
     width: 350px;
     margin-left: 600px;
-    margin-top:100px;
-    margin-left:2px
+    margin-top: 100px;
+    margin-left: 2px
 }
 
-.black2 #photo3{
-    height:55px;
-    width:55px;
+.black2 #photo3 {
+    height: 55px;
+    width: 55px;
     background-image: url(assets/businessman-portrait-in-a-studio-WUFDDGT_JYLtCoRS.jpg);
     border-radius: 50%;
     background-size: cover;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-#testi3 p{
+#testi3 p {
     font-size: 20px;
-    margin-left:15px;
-    margin-top:20px;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
-.black2 #testi4{
-    display:flex;
+.black2 #testi4 {
+    display: flex;
     flex-wrap: wrap;
-    color:white;
+    color: white;
     height: 200px;
     width: 350px;
     margin-left: 600px;
-    margin-top:-200px;
-    margin-left:600px;
+    margin-top: -200px;
+    margin-left: 600px;
 }
 
-.black2 #photo4{
-    height:55px;
-    width:55px;
+.black2 #photo4 {
+    height: 55px;
+    width: 55px;
     background-image: url(assets/woman-LEKTAVD_JYLtCoRS.jpg);
     border-radius: 50%;
     background-size: cover;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-#testi4 p{
+#testi4 p {
     font-size: 20px;
-    margin-left:15px;
-    margin-top:20px;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 .Contact {
-    display:flex;
-    margin-top:150px;
-    color:black;
-    flex-wrap:wrap;
+    display: flex;
+    margin-top: 150px;
+    color: black;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left:-40px;
-    width:1000px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: -40px;
+    width: 1000px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.Contact #para1{
+.Contact #para1 {
     font-size: 50px;
     margin-bottom: 0px;
 }
 
-.Contact #para2{
+.Contact #para2 {
     font-size: 15px;
-    
+
 }
 
-.Contact #para3{
+.Contact #para3 {
     font-size: 50px;
-    margin-top:50px;
-    margin-left:50px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
-.symbols{
+.symbols {
     display: flex;
     justify-content: space-evenly;
-    margin-top:-20px;
+    margin-top: -20px;
     width: 100%;
 }
 
-.Phone{
+.Phone {
     display: flex;
     flex-wrap: wrap;
     width: 200px;
 }
 
-.Phone #inside{
+.Phone #inside {
     height: 90px;
     width: 90px;
-    background-image:url(assets/—Pngtree—phone\ icon\ in\ circle\ black_5994540.png);
+    background-image: url(assets/—Pngtree—phone\ icon\ in\ circle\ black_5994540.png);
     background-size: cover;
     margin-left: 50px;
 }
 
-.Phone #para1{
+.Phone #para1 {
     font-size: 17px;
     margin-top: 100px;
     margin-left: -110px;
 }
 
-.Email{
+.Email {
     display: flex;
     flex-wrap: wrap;
     width: 150px;
 }
 
-.Email #inside{
+.Email #inside {
     height: 140px;
     width: 140px;
-    background-image:url(assets/—Pngtree—email\ icon\ design_5571212.png);
+    background-image: url(assets/—Pngtree—email\ icon\ design_5571212.png);
     background-size: cover;
-    margin-top:-20px;
-    margin-left: 10px;    
+    margin-top: -20px;
+    margin-left: 10px;
 }
 
-.Email #para2{
+.Email #para2 {
     font-size: 17px;
-    margin-top:-23px;
-    margin-left:-7px
+    margin-top: -23px;
+    margin-left: -7px
 }
 
-.social{
+.social {
     display: flex;
-    margin-top:50px;
-    background-image: url(assets/black-370118_1920.png) ;
+    margin-top: 50px;
+    background-image: url(assets/black-370118_1920.png);
     background-size: cover;
     height: 100px;
     width: 1250px;
-    margin-left:-120px;
+    margin-left: -120px;
 }
 
-.social #para{
-    color:white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 550px;
+.social #para {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 575px;
 }
 
-.social #unsocial{
-    display:flex;
-    margin-left: -165px;
-}
-
-.social #sociallist{
+.social #unsocial {
     display: flex;
-    margin-left:15px;
-    margin-top: 40px;;
+    margin-left: -160px;
 }
 
-.social #pic1{
+.social #sociallist {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 40px;
+    ;
+}
+
+.social #pic1 {
     background-image: url(assets/facebook-app-round-white-icon.png);
     background-size: cover;
     height: 20px;
     width: 20px;
+    cursor: pointer;
 }
 
-.social #pic2{
+.social #pic2 {
     background-image: url(assets/instagram-white-icon.png);
     background-size: cover;
     height: 20px;
     width: 20px;
+    cursor: pointer;
 }
-.social #pic3{
+
+.social #pic3 {
     background-image: url(assets/linkedin-app-white-icon.png);
     background-size: cover;
     height: 20px;
     width: 20px;
+    cursor: pointer;
 }
 
-.social #pic4{
+.social #pic4 {
     background-image: url(assets/x-social-media-white-round-icon.png);
     background-size: cover;
     height: 20px;
     width: 20px;
+    cursor: pointer;
+}
+
+.navigation .nav li button:hover{
+    text-decoration: underline;
+}
+
+.navigation .login button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: darkgrey;
+}
+
+.inner2 #logbut:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: darkgrey;
+}
+
+.black1 button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(201, 199, 199, 0.24), 0 17px 50px 0 rgba(201,199,199,0.24);
+}
+
+.black2 #all:hover{ 
+    background-color: white;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(201, 199, 199, 0.24), 0 17px 50px 0 rgba(201,199,199,0.24);
+}
+
+.social #pic1:hover{
+    box-shadow: 0 12px 16px 0 rgba(201, 199, 199, 0.24), 0 17px 50px 0 rgba(201,199,199,0.24);
+    width:25px;
+    height:25px;
+}
+
+.social #pic2:hover{
+    box-shadow: 0 12px 16px 0 rgba(201, 199, 199, 0.24), 0 17px 50px 0 rgba(201,199,199,0.24);
+    width:25px;
+    height:25px;
+}
+
+.social #pic3:hover{
+    box-shadow: 0 12px 16px 0 rgba(201, 199, 199, 0.24), 0 17px 50px 0 rgba(201,199,199,0.24);
+    width:25px;
+    height:25px;
+}
+
+.social #pic4:hover{
+    box-shadow: 0 12px 16px 0 rgba(201, 199, 199, 0.24), 0 17px 50px 0 rgba(201,199,199,0.24);
+    width:25px;
+    height:25px;
 }
