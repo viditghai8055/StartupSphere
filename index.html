@@ -1,262 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StartupSphere</title>
-    <script>
-        function redirectToPage() {
-            window.location.href = 'form.html';
-        }
-    </script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div id="back"></div>
-    <div class="navigation">
-        <div class="logo"><img src="assets/globe-logo-clip-art-white-signal-orbit-the-earth-b99d23afcb2ab08be49a3cedc0bd7f6e.png"><b>Startup<span>Sphere</span></b></div>
-        <div class="nav">
-            <ul>
-                <li><button>Home</button></li>
-                <li><button>About Us</button></li>
-                <li><button>Testimonials</button></li> 
-                <li><button>Contact us</button></li> 
-            </ul>
-        </div>
-        <div class="login">
-            <ul>
-                <button>LogIn</button>
-                <button onclick="redirectToPage()">SignUp</button>
-            </ul>
-        </div>
-   </div>
-
-   <div class="outer">
-        <div class="inner1">
-            <div class="content">
-                <p id="para1">
-                    <b>
-                    Crowd-fund your<br> dream project with<br> StartupSphere
-                    </b>
-                </p>
-    
-                <p id="para2">
-                    StartupSphere is a crowdfunding website where startups<br> and 
-                    investors can register and create their profiles and<br>
-                    communicate with each other to bring ideas to life.
-                </p>
-    
-                <img src="assets\pngwing.com.png">
-    
-                <div class="review">
-                    <p id="para3">
-                        <b>4.8</b><span>/5</span>
-                    </p>
-    
-                    <img src="assets\pngegg.png">
-    
-                    <p id="para4"><b>24k</b>
-                        <p id="para5"><br>Happy Customers</p>
-                    </p>
-                </div>
+    <section id="section1">
+        <div class="navigation">
+            <div class="logo"><img
+                    src="assets/globe-logo-clip-art-white-signal-orbit-the-earth-b99d23afcb2ab08be49a3cedc0bd7f6e.png"><b>Startup<span>Sphere</span></b>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><button onclick="scrollToSection1()">Home</button></li>
+                    <li><button onclick="scrollToSection2()">About Us</button></li>
+                    <li><button onclick="scrollToSection3()">Features</button></li>
+                    <li><button onclick="scrollToSection4()">Testimonials</button></li>
+                    <li><button onclick="scrollToFooter()">Contact us</button></li>
+                </ul>
+            </div>
+            <div class="login">
+                <ul>
+                    <button>LogIn</button>
+                    <button onclick="redirectToPage()">SignUp</button>
+                </ul>
             </div>
         </div>
 
-        <div class="inner2">
-            <label for="name" id="label1">Name</label>
-            <input type="text" id="name" placeholder="StartUp Name">
+        <div class="outer">
+            <div class="inner1">
+                <div class="content">
+                    <p id="para1">
+                        <b>
+                            Crowd-fund your<br> dream project with<br> StartupSphere
+                        </b>
+                    </p>
 
-            <label for="Email" id="label2">Email</label>
-            <input type="email" id="Email" placeholder="E-mail">
+                    <p id="para2">
+                        StartupSphere is a crowdfunding website where startups<br> and
+                        investors can register and create their profiles and<br>
+                        communicate with each other to bring ideas to life.
+                    </p>
 
-            <label for="Password" id="label3">Password</label>
-            <input type="password" id="Password" placeholder="Password">
+                    <img src="assets\pngwing.com.png">
 
-            <button id="logbut">LogIn</button>
+                    <div class="review">
+                        <p id="para3">
+                            <b>4.8</b><span>/5</span>
+                        </p>
+
+                        <img src="assets\pngegg.png">
+
+                        <p id="para4"><b>24k</b>
+                        <p id="para5"><br>Happy Customers</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner2">
+                <label for="name" id="label1">Name</label>
+                <input type="text" id="name" placeholder="StartUp Name">
+
+                <label for="Email" id="label2">Email</label>
+                <input type="email" id="Email" placeholder="E-mail">
+
+                <label for="Password" id="label3">Password</label>
+                <input type="password" id="Password" placeholder="Password">
+
+                <button id="logbut">LogIn</button>
+            </div>
         </div>
-   </div>
 
-   <div class="comp">
-        <p>Trusted by Global<br>Companies</p>
-        <div id="Compnames1"></div>
-        <div id="Compnames2"></div>
-        <div id="Compnames3"></div>
-        <div id="Compnames4"></div>
-        <div id="Compnames5"></div>
-        <div id="Compnames6"></div>
-   </div>
+        <div class="comp">
+            <p>Trusted by Global<br>Companies</p>
+            <div id="Compnames1"></div>
+            <div id="Compnames2"></div>
+            <div id="Compnames3"></div>
+            <div id="Compnames4"></div>
+            <div id="Compnames5"></div>
+            <div id="Compnames6"></div>
+        </div>
+    </section>
 
-   <div class="black1">
-        <div id="image"></div>
-        <div class="cont">
-            <p id="para1"><b>About Us</b></p>
-            <p id="para2">
+    <section id="section2">
+        <div class="black1">
+            <div id="image"></div>
+            <div class="cont">
+                <p id="para1"><b>About Us</b></p>
+                <p id="para2">
+                    <b>
+                        Empowering <br> entrepreneurs to <br> bring their ideas to life
+                    </b>
+                </p>
+
+                <ul>
+                    <li>Innovative crowdfunding solutions</li>
+                    <li>User-friendly platform</li>
+                    <li>Expert guidance</li>
+                    <li>Effective communication</li>
+                </ul>
+            </div>
+
+            <div id="vision">
+                <p id="visionHead">Our Vision</p>
+                <p id="visionCont">Our vision is to create a platform that empowers <br>
+                    entrepreneurs to bring their ideas to life,<br>
+                    revolutionizing the startup industry and driving <br>
+                    innovation around the world.
+                </p>
+                <button>Learn more</button>
+            </div>
+
+            <div id="mission">
+                <p id="missionHead">Our Mision</p>
+                <p id="missionCont">Our mission is to revolutionize the startup industry <br>
+                    by empowering entrepreneurs, connecting them <br>
+                    with investors. We aim to bridge the funding gap,<br>
+                    fostering innovation and growth, and creating<br>
+                    a dynamic ecosystem where ideas can thrive <br>
+                    and drive economic progress.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="features">
+            <p id="heading">Realize your vision with<br> our platform</p>
+            <div id="img"></div>
+            <div id="info">
+                <div id="creation"><b>1/ Profile Creation</b></div>
+                <p id="details">Our platform allows you to easily create a <br>
+                    professional profile, showcasing your business <br>
+                    idea and highlighting your team’s expertise.
+                </p>
+                <div id="communication"><b>2/ communication <br> &emsp; &emsp; Platlform</b></div>
+                <p id="details">Our communication platform allows you to<br>
+                    connect with potential investors, share your<br>
+                    pitch, and answer any questions they may have.
+                </p>
+                <div id="crowd"><b>3/ Crowdunding <br> &emsp; &ensp; Solutions</b></div>
+                <p id="details">
+                    Our crowdfunding solutions provide startups<br>
+                    with the opportunity to secure funding for their <br>
+                    projects and bring their ideas to life.
+                </p>
+                <div id="expert"><b>4/ Expert Guidance</b></div>
+                <p id="details">
+                    Our experienced team provides expert guidance <br>
+                    to help you navigate the crowdfunding process <br>
+                    and maximize your chances of success.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="black2">
+            <p id="testimonial"><b>Testimonials</b></p>
+            <p id="content">
                 <b>
-                    Empowering <br> entrepreneurs to <br> bring their ideas to life
+                    StartupSphere has been instrumental<br>
+                    in helping us secure funding for our<br>
+                    project and bring our idea to life.<br>
+                    We couldn't have done it without<br>
+                    their expert guidance and<br>
+                    innovative crowdfunding solutions.
                 </b>
             </p>
+            <button id="all">All Testimonials</button>
 
-            <ul>
-                <li>Innovative crowdfunding solutions</li>
-                <li>User-friendly platform</li>
-                <li>Expert guidance</li>
-                <li>Effective communication</li>
-            </ul>
+            <div id="testi1">
+                “StartupSphere provided us with a user-friendly<br>
+                platform to showcase our idea and connect<br>
+                with potential investors. Their expert guidance<br>
+                and transparent pricing made the<br>
+                crowdfunding process easy and effective.”
+                <div id="photo1"></div>
+                <p><b>Brian Davis</b><br><span>CMO, Trendsetter Style</span></p>
+            <div>
+
+            <div id="testi2">
+                “Thanks to StartupSphere, we were able to secure<br>
+                funding for our project and bring our idea to<br>
+                life. Their communication platform allowed us<br>
+                to easily connect with investors and their<br>
+                expert guidance helped us navigate the<br>
+                crowdfunding process.”
+                <div id="photo2"></div>
+                <p><b>Michael Lee</b><br><span>Director, The Online Emporium</span></p>
+            </div>
+
+            <div id="testi3">
+                “StartupSphere provided us with innovative<br>
+                crowdfunding solutions that worked for our<br>
+                unique needs. Their team was always available<br>
+                to answer our questions and provide expert<br>
+                guidance throughout the process.”
+                <div id="photo3"></div>
+                <p><b>Mark Johnson</b><br><span>MD, Acme Solutions</span></p>
+            </div>
+
+            <div id="testi4">
+                “We couldn’t be happier with our experience<br>
+                with StartupSphere. Their user-friendly platform and<br>
+                effective communication tools made it easy to<br>
+                connect with investors and secure funding for<br>
+                our project.”
+                <div id="photo4"></div>
+                <p><b>Sarah Wilson</b><br><span>Founder, Greenly Technologies</span></p>
+            </div>
         </div>
+    <section>
 
-        <div id="vision">
-            <p id="visionHead">Our Vision</p>
-            <p id="visionCont">Our vision is to create a platform that empowers <br>
-                 entrepreneurs to bring their ideas to life,<br> 
-                 revolutionizing the startup industry and driving <br>
-                 innovation around the world.
-            </p>
-            <button>Learn more</button>
-        </div>
-
-        <div id="mission">
-            <p id="missionHead">Our Mision</p>
-            <p id="missionCont">Our mission is to revolutionize the startup industry <br>
-                by empowering entrepreneurs, connecting them <br>
-                with investors. We aim to bridge the funding gap,<br> 
-                fostering innovation and growth, and creating<br>
-                a dynamic ecosystem where ideas can thrive <br> 
-                and drive economic progress.
-            </p>
-        </div>
-   </div>
-
-   <div class="features">
-        <p id="heading">Realize your vision with<br> our platform</p>
-        <div id="img"></div>
-        <div id="info">
-            <div id="creation"><b>1/ Profile Creation</b></div>
-            <p id="details">Our platform allows you to easily create a <br>
-               professional profile, showcasing your business <br>
-               idea and highlighting your team’s expertise.
-            </p>
-            <div id="communication"><b>2/ communication <br> &emsp; &emsp; Platlform</b></div>
-            <p id="details">Our communication platform allows you to<br> 
-                connect with potential investors, share your<br>
-                pitch, and answer any questions they may have.
-            </p>
-            <div id="crowd"><b>3/ Crowdunding <br> &emsp; &ensp; Solutions</b></div>
-            <p id="details">
-                Our crowdfunding solutions provide startups<br>
-                with the opportunity to secure funding for their <br>
-                projects and bring their ideas to life.
-            </p>
-            <div id="expert"><b>4/ Expert Guidance</b></div>
-            <p id="details">
-                Our experienced team provides expert guidance <br> 
-                to help you navigate the crowdfunding process <br>
-                and maximize your chances of success.
-            </p>
-        </div>
-   </div>
-
-   <div class="black2">
-       <p id="testimonial"><b>Testimonials</b></p>
-       <p id="content">
-            <b>
-                StartupSphere has been instrumental<br>
-                in helping us secure funding for our<br> 
-                project and bring our idea to life.<br> 
-                We couldn't have done it without<br> 
-                their expert guidance and<br> 
-                innovative crowdfunding solutions.
-            </b>
-        </p>
-        <button id="all">All Testimonials</button>
-
-        <div id="testi1">
-            “StartupSphere  provided us with a user-friendly<br> 
-            platform to showcase our idea and connect<br> 
-            with potential investors. Their expert guidance<br> 
-            and transparent pricing made the<br> 
-            crowdfunding process easy and effective.”
-            <div id="photo1"></div>
-            <p><b>Brian Davis</b><br><span>CMO, Trendsetter Style</span></p>
-        <div>
-
-        <div id="testi2">
-            “Thanks to StartupSphere, we were able to secure<br> 
-            funding for our project and bring our idea to<br> 
-            life. Their communication platform allowed us<br> 
-            to easily connect with investors and their<br> 
-            expert guidance helped us navigate the<br> 
-            crowdfunding process.”
-            <div id="photo2"></div>
-            <p><b>Michael Lee</b><br><span>Director, The Online Emporium</span></p>
-        </div>
-
-        <div id="testi3">
-            “StartupSphere provided us with innovative<br>
-             crowdfunding solutions that worked for our<br>
-             unique needs. Their team was always available<br>
-             to answer our questions and provide expert<br> 
-             guidance throughout the process.”
-             <div id="photo3"></div>
-             <p><b>Mark Johnson</b><br><span>MD, Acme Solutions</span></p>
-        </div>
-
-        <div id="testi4">
-            “We couldn’t be happier with our experience<br>
-             with StartupSphere. Their user-friendly platform and<br> 
-             effective communication tools made it easy to<br>
-             connect with investors and secure funding for<br> 
-             our project.”
-             <div id="photo4"></div>
-             <p><b>Sarah Wilson</b><br><span>Founder, Greenly Technologies</span></p>
-        </div>
-   </div>
-
-   <footer>
-
+    <footer id="footer">
         <div class="Contact">
             <p id="para1"><b>Contact Us</b></p>
             <p id="para2">
                 <b>
-                    We are always available to answer any questions you may have. Whether you are a startup looking to register or an investor<br>
-                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; seeking the next big idea, we are here to help.
+                    We are always available to answer any questions you may have. Whether you are a startup
+                    looking to register or an investor<br>
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                    &emsp; &emsp; seeking the next big idea, we are here to help.
                 </b>
             </p>
             <p id="para3"><b>We would love to hear from you</b></p>
             <div class="symbols">
-                <div class="Phone">
+            <div class="Phone">
                     <div id="inside"></div>
                     <p id="para1"><b>Talk to our team</b><br>+91 9311XXXXXX</p>
                 </div>
-                <div class="Email">
-                    <div id="inside"></div>
-                    <p id="para2"><b>&emsp; &emsp; &nbsp; Email Us</b><br>support@startupsphere.com</p>
+                    <div class="Email">
+                        <div id="inside"></div>
+                        <p id="para2"><b>&emsp; &emsp; &nbsp; Email Us</b><br>support@startupsphere.com</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="social">
-            <p id="para"><b>Follow Us</b></p>
-            <ul id="unsocial">
-                <li id="sociallist"><div id="pic1"></div></li>
-                <li id="sociallist"><div id="pic2"></div></li>
-                <li id="sociallist"><div id="pic3"></div></li>
-                <li id="sociallist"><div id="pic4"></div></li>
-            </ul>
-        </div>
-        
-   </footer>
+            <div class="social">
+                <p id="para"><b>Follow Us</b></p>
+                <ul id="unsocial">
+                    <li id="sociallist">
+                        <div id="pic1"></div>
+                    </li>
+                    <li id="sociallist">
+                        <div id="pic2"></div>
+                    </li>
+                    <li id="sociallist">
+                        <div id="pic3"></div>
+                    </li>
+                    <li id="sociallist">
+                        <div id="pic4"></div>
+                    </li>
+                </ul>
+            </div>
+    </footer>
+<script src="app.js"></script>
 </body>
+
 </html>

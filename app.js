@@ -45,4 +45,31 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-   
+function redirectToPage() {
+    window.location.href = 'form.html';
+}
+
+function scrollToSection1() {
+    const section = document.getElementById("section1");
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToSection2() {
+    const section = document.getElementById("section2");
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToSection3() {
+    const section = document.getElementById("section3");
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToSection4() {
+    const section = document.getElementById("section4");
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+ 
+function scrollToFooter() {
+    const section = document.getElementById("footer");
+    section.scrollIntoView({ behavior: 'smooth' });
+}
