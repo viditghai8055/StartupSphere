@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 9 Sign-Up Form</title>
+    <link rel="stylesheet" href="form.css"> 
+</head>
+<body>
+    <div class="main-container">
+        <div id="sign-up-box">
+            <h1>Sign Up</h1>
+            <div id="role-selection">
+                <h2>Select Role</h2>
+                <div class="role-options">
+                    <div id="startup-option" class="role-option">Startup</div>
+                    <div id="investor-option" class="role-option">Investor</div>
+                </div>
+            </div>
+        </div>
+
+        <form id="startup-form" class="hidden" action="/submit-startup" method="POST">
+            <h2>Startup Information</h2>
+            <label for="startup-name">Startup Name:</label>
+            <input type="text" id="startup-name" name="startup-name" required>
+
+            <label for="startup-email">Email:</label>
+            <input type="email" id="startup-email" name="startup-email" required>
+            <div class="verification">
+                <input type="text" id="startup-email-code" name="startup-email-code" placeholder="Enter verification code">
+                <button type="button" id="verify-email-startup">Verify Email</button>
+            </div>
+
+            <label for="startup-phone">Contact No:</label>
+            <input type="tel" id="startup-phone" name="startup-phone" required>
+            <div class="verification">
+                <input type="text" id="startup-phone-code" name="startup-phone-code" placeholder="Enter verification code">
+                <button type="button" id="verify-phone-startup">Verify Phone</button>
+            </div>
+
+            <div class="sector-container">
+                <label for="sector">Sector:</label>
+                <select id="sector" name="sector" required>
+                    <option value="" disabled selected>Select your sector</option>
+                    <option value="tech">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="health">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="energy">Energy</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="text" id="other-sector" name="other-sector" placeholder="Please specify your sector" class="hidden">
+            </div>
+
+            <label for="website">Website Link:</label>
+            <input type="url" id="website" name="website">
+
+            <button type="submit">Register as Startup</button>
+        </form>
+
+        <form id="investor-form" class="hidden" action="/submit-investor" method="POST">
+            <h2>Investor Information</h2>
+            <label for="investor-name">Investor Name:</label>
+            <input type="text" id="investor-name" name="investor-name" required>
+
+            <label for="investor-email">Email:</label>
+            <input type="email" id="investor-email" name="investor-email" required>
+            <div class="verification">
+                <input type="text" id="investor-email-code" name="investor-email-code" placeholder="Enter verification code">
+                <button type="button" id="verify-email-investor">Verify Email</button>
+            </div>
+
+            <label for="investor-phone">Contact No:</label>
+            <input type="tel" id="investor-phone" name="investor-phone" required>
+            <div class="verification">
+                <input type="text" id="investor-phone-code" name="investor-phone-code" placeholder="Enter verification code">
+                <button type="button" id="verify-phone-investor">Verify Phone</button>
+            </div>
+
+            <button type="submit">Register as Investor</button>
+        </form>
+    </div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
+
